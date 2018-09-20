@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["potato2003"]
   spec.email         = ["potato2003@gmail.com"]
 
+  spec.licenses      = ["MIT"]
   spec.summary       = "reconnect after checkout in order to DB failover"
   spec.description   = spec.summary
   spec.homepage      = "https://github.com/potato2003/activerecord_reconnect_after_checkout"
