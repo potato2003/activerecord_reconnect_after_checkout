@@ -1,6 +1,6 @@
 # ActiverecordReconnectAfterCheckout
 
-this Gem is auto reconnect with DB on each checkout a connection from ActiveRecord's connection pool.
+This Gem is auto reconnect with DB on each checkout a connection from ActiveRecord's connection pool.
 
 ## Installation
 
@@ -13,6 +13,15 @@ gem 'activerecord_reconnect_after_checkout'
 And then execute:
 
     $ bundle
+
+## Use on any middlewares
+
+This Gem depends only on ActiveRecord. It works also with Rails, Sinatra, sidekiq etc.
+
+## Reconnecting when checkout a connection.
+
+This Gem uses `checkout` callback of ActiveRecord::ConnectionAdapters::AbstractAdapter.
+then execute `AbstractAdapter#reconnect` whenever a callback is called.
 
 ## Contributing
 
