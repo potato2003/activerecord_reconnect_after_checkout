@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/activerecord_reconnect_after_checkout.svg)](https://badge.fury.io/rb/activerecord_reconnect_after_checkout)
+
 # ActiverecordReconnectAfterCheckout
 
 This Gem is auto reconnect with DB on each checkout a connection from ActiveRecord's connection pool.
